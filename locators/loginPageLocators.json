@@ -1,0 +1,5 @@
+{
+    "userNameField": "//*[@name='username']",
+    "passwordField": "//*[@name='password']",
+    "loginButton": "//input[@value='Log In']"
+}
