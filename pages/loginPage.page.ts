@@ -1,6 +1,6 @@
 import { Page, expect } from "@playwright/test";
 import loginLoc from "../locators/loginPageLocators.json";
-import loginData from "../utils/loginData.json";
+import loginData from "../utils/testData/loginData.json";
 import logger from "../utils/logger";
 
 export default class UserLoginOnPrem {
