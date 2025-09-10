@@ -26,5 +26,6 @@ export default class UserLoginOnPrem {
     await this.page.locator(loginLoc.loginButton).click();
 
     logger.info("User logged into ParaBank application");
+    await this.page.waitForTimeout(5000);
   }
 }
