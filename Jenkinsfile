@@ -95,22 +95,22 @@ pipeline {
             }
         }
         
-        stage('Generate Reports') {
-            when {
-                // Only generate reports if we have test results
-                expression { fileExists('playwright-report') }
-            }
-            steps {
-                echo 'Generating test reports...'
-                script {
-                    if (isUnix()) {
-                        sh 'npx playwright show-report --reporter=html'
-                    } else {
-                        bat 'npx playwright show-report --reporter=html'
-                    }
-                }
+stage('Generate Reports') {
+    when {
+        expression { fileExists('playwright-report') }
+    }
+    steps {
+        echo 'Generating test reports...'
+        script {
+            if (isUnix()) {
+                sh 'npx playwright show-report'  // no --reporter
+            } else {
+                bat 'npx playwright show-report'
             }
         }
+    }
+}
+
     }
     
     // Post-build actions
