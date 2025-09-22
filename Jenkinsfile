@@ -58,22 +58,6 @@ pipeline {
             }
         }
         
-        stage('Lint Code') {
-            steps {
-                echo 'Running code linting...'
-                script {
-                    try {
-                        if (isUnix()) {
-                            sh 'npm run lint || true'  // || true prevents failure
-                        } else {
-                            bat 'npm run lint || exit 0'
-                        }
-                    } catch (Exception e) {
-                        echo "Linting failed: ${e.getMessage()}"
-                    }
-                }
-            }
-        }
         
         stage('Run Tests') {
             steps {
