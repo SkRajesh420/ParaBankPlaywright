@@ -4,7 +4,7 @@ pipeline {
     
     // Define tools to use
     tools {
-        nodejs 'NodeJS-18'  // Must match the name in Global Tool Configuration
+        nodejs 'NodeJS-LTS'  // Must match the name in Global Tool Configuration
     }
     
     // Environment variables
