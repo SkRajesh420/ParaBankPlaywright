@@ -1,6 +1,6 @@
 import { test, expect, APIRequestContext } from '@playwright/test';
 import { format } from 'date-fns';
-import { saveCredentials, loadRegistrationData } from '../utils/testDataUtil';
+import { saveCredentials, loadRegistrationData } from '../../utils/testDataUtil';
 
 // Define API endpoints
 const REGISTER_API_ENDPOINT = 'https://parabank.parasoft.com/parabank/register.htm';

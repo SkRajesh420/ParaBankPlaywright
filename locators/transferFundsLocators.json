@@ -1,0 +1,6 @@
+{
+    "transferFundsBtn": "//a[contains(text(),'Transfer Funds')]",
+    "transferamountField": "//input[@id='amount']",
+    "transferConfirmButton": "//input[@type='submit']",
+    "transferConfirmMsg": "//h1[contains(text(),'Transfer Complete!')]"
+}

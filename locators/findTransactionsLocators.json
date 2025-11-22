@@ -1,0 +1,13 @@
+{
+    "findTransactionsBtn": "//a[contains(text(),'Find Transactions')]",
+    "findByDateField": "//*[@id='transactionDate']",
+    "findByDateSearchBtn": "//*[@id='findByDate']",
+    "findByDateFromField": "//*[@id='fromDate']",
+    "findByDateToField": "//*[@id='toDate']",
+    "findByDateRangeSearchBtn": "//*[@id='findByDateRange']",
+    "findByAmountField": "//*[@id='amount']",
+    "findByAmountSearchBtn": "//*[@id='findByAmount']",
+    "TransactionResultsTable": "//*[contains(text(),'Transaction Results')]",
+    "TransactionResultdatas": "//*[@id='accountDetails']//td",
+    "TransactionResultData":"(//*[@id='transactionBody']//a)[1]"
+}

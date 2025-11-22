@@ -1,0 +1,7 @@
+{
+    "requestLoanBtn": "//*[contains(text(),'Request Loan')]",
+    "loanAmountField": "//*[@id='amount']",
+    "downPaymentField": "//*[@id='downPayment']",
+    "applyNowBtn": "//*[@value='Apply Now']",
+    "LoanCnfrmMsg": "//*[@id='loanRequestApproved']"
+}

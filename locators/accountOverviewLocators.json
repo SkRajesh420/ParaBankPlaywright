@@ -1,0 +1,5 @@
+{
+    "accountOverviewBtn": "//a[contains(text(),'Accounts Overview')]",
+    "accountNmberLink": "//table//td//a",
+    "accountData": "//*[@id='accountDetails']//td"
+}

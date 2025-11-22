@@ -6,6 +6,8 @@ const credentialsPath = path.join(testDataDirPath, 'credentials.json');
 const registrationDataPath = path.join(testDataDirPath, 'registrationData.json');
 const loginLocatorsPath = path.join(__dirname, '../locators/loginPageLocators.json'); // Assuming 'locators' directory
 const registrationLocatorsPath = path.join(__dirname, '../locators/userRegistration.json'); // Assuming 'locators' directory
+const applyLoanLocatorsPath = path.join(__dirname, '../locators/applyLoan.Locators.json'); // Assuming 'locators' directory
+const applyLoanDataPath = path.join(testDataDirPath, 'applyLoan.Data.json');
 
 // Helper to ensure directory exists
 function ensureDirectoryExistence(dirPath: string) {
@@ -44,4 +46,15 @@ export function loadRegistrationLocators(): any {
     throw new Error(`Error: registrationLocators.json not found at ${registrationLocatorsPath}`);
   }
   return JSON.parse(fs.readFileSync(registrationLocatorsPath, 'utf-8'));
+}
+
+export function loadApplyLoanLocators(): any {
+  if (!fs.existsSync(applyLoanLocatorsPath)) {
+    throw new Error(`Error: applyLoanLocators.json not found at ${applyLoanLocatorsPath}`);
+  }   
+}
+export function loadApplyLoanData(): any {
+  if (!fs.existsSync(applyLoanDataPath)) {
+    throw new Error(`Error: applyLoanData.json not found at ${applyLoanDataPath}`);
+  }   
 }

@@ -1,0 +1,9 @@
+{
+    "openNewAccountBtn": "//*[contains(text(),'Open New Account')]",
+    "accountType": "//*[@id='type']",
+    "checkingAccount": "//*[contains(text(),'CHECKING')]",
+    "savingsAccount": "//*[contains(text(),'SAVINGS')]",
+    "openNewAccountCnfrmBtn": "//*[@value='Open New Account']",
+    "newAccountCnfrmMsg": "//*[@id='openAccountResult']",
+    "transactionDatas" : "//table//td"
+}
