@@ -60,7 +60,7 @@ export class RegistrationPage {
 
     console.info('Clicking Register button');
     await this.page.getByRole('button', { name: 'Register' }).click();
-
+    await this.page.click("//a[contains(text(),'Accounts Overview')]")
     console.info('Registration process completed');
   }
 }

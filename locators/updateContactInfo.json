@@ -1,0 +1,12 @@
+{
+  "updateContactInfoBtn": "//a[contains(text(),'Update Contact Info')]",
+  "custFirstNameField": "//input[@name='customer.firstName']",
+  "custLastNameField": "//input[@name='customer.lastName']",
+  "custAddressField": "//input[@name='customer.address.street']",
+  "custCityField": "//input[@name='customer.address.city']",
+  "custStateField": "//input[@name='customer.address.state']",
+  "custZipcodeField": "//input[@name='customer.address.zipCode']",
+  "custPhoneField": "//input[@name='customer.phoneNumber']",
+  "updateProfileBtn": "//input[@value='Update Profile']",
+  "profileUpdateConfirmation": "//div[@id='updateProfileResult']/h1"
+}

@@ -1,0 +1,14 @@
+{
+  "billPayBtn": "//a[contains(text(),'Bill Pay')]",
+  "payeeNameField": "//input[@name='payee.name']",
+  "payeeAdressField": "//input[@name='payee.address.street']",
+  "payeeCityField": "//input[@name='payee.address.city']",
+   "payeeStateField": "//input[@name='payee.address.state']",
+  "payeeZipcodeField": "//input[@name='payee.address.zipCode']",
+  "payeePhoneField": "//input[@name='payee.phoneNumber']",
+  "payeeAccountField": "//input[@name='payee.accountNumber']",
+  "payeeVerifyAccountField": "//input[@name='verifyAccount']",
+  "payeeAmountField": "//input[@name='amount']",
+  "sendPaymentBtn": "//input[@value='Send Payment']",
+  "billPaymentConfirmation": "//div[@id='billpayResult']/h1"
+}
