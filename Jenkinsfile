@@ -403,44 +403,44 @@ pipeline {
 }
 
 // Helper function to send notifications
-def sendNotification(String status, String subject, String message) {
-    // Configure these based on your needs
+// def sendNotification(String status, String subject, String message) {
+//     // Configure these based on your needs
     
-    // Email notification (uncomment and configure)
+//     // Email notification (uncomment and configure)
     
-    emailext (
-        subject: subject,
-        body: """
-            <html>
-            <body>
-                <h3>${subject}</h3>
-                <p>${message}</p>
-                <hr>
-                <h4>Build Information:</h4>
-                <ul>
-                    <li><strong>Project:</strong> ${params.PROJECT}</li>
-                    <li><strong>Build URL:</strong> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></li>
-                    <li><strong>Console Output:</strong> <a href="${env.BUILD_URL}console">${env.BUILD_URL}console</a></li>
-                    <li><strong>Playwright Report:</strong> <a href="${env.BUILD_URL}Playwright_HTML_Report/">${env.BUILD_URL}Playwright_HTML_Report/</a></li>
-                    <li><strong>Allure Report:</strong> <a href="${env.BUILD_URL}Allure_Report/">${env.BUILD_URL}Allure_Report/</a></li>
-                </ul>
-            </body>
-            </html>
-        """,
-        mimeType: 'text/html',
-        to: "${env.CHANGE_AUTHOR_EMAIL ?: '81srajesh@gmail.com'}",
-        replyTo: 'noreply@example.com'
-    )
-    
-    
-    // Slack notification (configure webhook URL in Jenkins)
-    
-    slackSend(
-        channel: '#qa-automation',
-        color: status == 'SUCCESS' ? 'good' : (status == 'UNSTABLE' ? 'warning' : 'danger'),
-        message: "${subject}\n${message}\n<${env.BUILD_URL}|View Build> | <${env.BUILD_URL}Playwright_HTML_Report/|Test Report>"
-    )
+//     // emailext (
+//     //     subject: subject,
+//     //     body: """
+//     //         <html>
+//     //         <body>
+//     //             <h3>${subject}</h3>
+//     //             <p>${message}</p>
+//     //             <hr>
+//     //             <h4>Build Information:</h4>
+//     //             <ul>
+//     //                 <li><strong>Project:</strong> ${params.PROJECT}</li>
+//     //                 <li><strong>Build URL:</strong> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></li>
+//     //                 <li><strong>Console Output:</strong> <a href="${env.BUILD_URL}console">${env.BUILD_URL}console</a></li>
+//     //                 <li><strong>Playwright Report:</strong> <a href="${env.BUILD_URL}Playwright_HTML_Report/">${env.BUILD_URL}Playwright_HTML_Report/</a></li>
+//     //                 <li><strong>Allure Report:</strong> <a href="${env.BUILD_URL}Allure_Report/">${env.BUILD_URL}Allure_Report/</a></li>
+//     //             </ul>
+//     //         </body>
+//     //         </html>
+//     //     """,
+//     //     mimeType: 'text/html',
+//     //     to: "${env.CHANGE_AUTHOR_EMAIL ?: '81srajesh@gmail.com'}",
+//     //     replyTo: 'noreply@example.com'
+//     // )
     
     
-    echo "Notification: ${subject}"
-}
+//     // Slack notification (configure webhook URL in Jenkins)
+    
+//     // slackSend(
+//     //     channel: '#qa-automation',
+//     //     color: status == 'SUCCESS' ? 'good' : (status == 'UNSTABLE' ? 'warning' : 'danger'),
+//     //     message: "${subject}\n${message}\n<${env.BUILD_URL}|View Build> | <${env.BUILD_URL}Playwright_HTML_Report/|Test Report>"
+//     // )
+    
+    
+//     // echo "Notification: ${subject}"
+// }
