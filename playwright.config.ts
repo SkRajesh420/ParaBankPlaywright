@@ -69,62 +69,38 @@ export default defineConfig({
       },
     },
 
-    // {
-    //   name: 'UI - Firefox',
-    //   testIgnore: '**/API/**',
-    //   use: { 
-    //     ...devices['Desktop Firefox'] 
-    //   },
-    // },
+    {
+      name: 'UI - Firefox',
+      testIgnore: '**/API/**',
+      use: { 
+        ...devices['Desktop Firefox'] 
+      },
+    },
 
-    // {
-    //   name: 'UI - WebKit',
-    //   testIgnore: '**/API/**',
-    //   use: { 
-    //     ...devices['Desktop Safari'] 
-    //   },
-    // },
+    {
+      name: 'UI - WebKit',
+      testIgnore: '**/API/**',
+      use: { 
+        ...devices['Desktop Safari'] 
+      },
+    },
 
     // UI Tests - Mobile Devices
-    // {
-    //   name: 'UI - Mobile Chrome',
-    //   testIgnore: '**/API/**',
-    //   use: { 
-    //     ...devices['Pixel 5'] 
-    //   },
-    // },
+    {
+      name: 'UI - Galaxy S9+',
+      testIgnore: '**/API/**',
+      use: { 
+        ...devices['Galaxy S9+'] 
+      },
+    },
 
-    // {
-    //   name: 'UI - Mobile Safari',
-    //   testIgnore: '**/API/**',
-    //   use: { 
-    //     ...devices['iPhone 13'] 
-    //   },
-    // },
-
-    // {
-    //   name: 'UI - iPad',
-    //   testIgnore: '**/API/**',
-    //   use: { 
-    //     ...devices['iPad Pro'] 
-    //   },
-    // },
-
-    // {
-    //   name: 'UI - Galaxy S9+',
-    //   testIgnore: '**/API/**',
-    //   use: { 
-    //     ...devices['Galaxy S9+'] 
-    //   },
-    // },
-
-    // {
-    //   name: 'UI - iPhone 12',
-    //   testIgnore: '**/API/**',
-    //   use: { 
-    //     ...devices['iPhone 12'] 
-    //   },
-    // },
+    {
+      name: 'UI - iPhone 12',
+      testIgnore: '**/API/**',
+      use: { 
+        ...devices['iPhone 12'] 
+      },
+    },
 
     // API Tests - Run LAST, only once, no multiple browsers/devices
     {
